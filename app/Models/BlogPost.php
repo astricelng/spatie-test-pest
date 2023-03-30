@@ -63,7 +63,7 @@ class BlogPost extends Model implements Feedable
 
     public function publish(): self
     {
-        if($this->status === BlogPostStatus::PUBLISHED()) {
+        if ($this->status === BlogPostStatus::PUBLISHED()) {
             throw BlogPostCouldNotBePublished::make();
         }
 
@@ -107,7 +107,7 @@ class BlogPost extends Model implements Feedable
             'blog_post_id' => $this->id,
         ])->delete();
 
-        $this->likes -= 1;
+        $this->likes -= 2;
 
         $this->save();
     }
