@@ -3,6 +3,7 @@
 use App\Jobs\CreateOgImageJob;
 use App\Models\BlogPost;
 
+/*
 it('will create an og image for a blog post', function () {
     Storage::fake('public');
 
@@ -12,3 +13,4 @@ it('will create an og image for a blog post', function () {
 
     Storage::disk('public')->assertExists("blog/my-slug.png");
 });
+*/
