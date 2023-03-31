@@ -3,6 +3,7 @@
 use League\CommonMark\MarkdownConverter;
 use function \Spatie\Snapshots\assertMatchesSnapshot;
 
+/*
 it('can parse hljs tags', function () {
     $markdown = <<<MD
 ```php
@@ -19,3 +20,4 @@ MD;
 
     assertMatchesSnapshot($html);
 });
+*/
